@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="main.html"><img src="./images/home.png"></a>
+            <a href="profile.html">О нас</a>
+        </div>
+        <h1>VeloKom</h1>
+        <div>
+            <button><img src="./images/cart.png" alt="" onclick="openCart();"></button>
+            <a href="auth.html"><img src="./images/user_img.png"></a>
+        </div>
+    </header>
+    <main id="main">
+        <div id="ads" class="ads"></div>
+        <div class="cart" id="cart"></div>
+    </main>
+    <h2>Добавить объявление</h2>
+    <div id="adForm">
+        <label>Название:</label>
+        <input type="text" id="title">
+        <span class="error" id="titleError">Поле обязательно!</span>
+
+        <label>Описание:</label>
+        <textarea id="description"></textarea>
+        <span class="error" id="descError">Поле обязательно!</span>
+
+        <label>Цена:</label>
+        <input type="number" id="cost">
+        <span class="error" id="costError">Введите корректную цену!</span>
+
+        <input type="button" onclick="submitAd();" value="Добавить товар">
+    </div>
+    <footer>
+        <p>Все права защищены © VeloKom 2024</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

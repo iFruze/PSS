@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <a href="main.html"><img src="./images/home.png"></a>
+        <h1>VeloKom</h1>
+        <div>
+            <button><img src="./images/cart.png" alt=""></button>
+            <a href="auth.html"><img src="./images/user_img.png"></a>
+        </div>
+    </header>
+    <main>
+        <form name="Form">
+            <h1>Авторизация</h1>
+            <input placeholder="Логин" type="text" name="login" required>
+            <input placeholder="Пароль" type="password" name="password" required>
+            <a href="reg.html">Нет аккаунта?</a>
+            <button onclick="auth();">Войти</button>
+        </form>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
