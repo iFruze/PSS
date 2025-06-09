@@ -97,9 +97,7 @@ function reg(){
 }
 
 function auth(){
-    // window.location.href = "profile.html";
     alert('Вы авторизованы!');
-
 }
 
 function load(){
